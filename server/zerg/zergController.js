@@ -1,14 +1,14 @@
 var Q = require('q');
-var Terran = require('./terranSchema.js');
+var Zerg = require('./zergSchema.js');
 
-var findAllUnits = Q.nbind(Terran.find, Terran)
+var findAllUnits = Q.nbind(Zerg.find, Zerg);
 
 module.exports = {
 
   allUnits: function(req, res, next) {
     findAllUnits({})
       .then(function(units) {
-        res.json(units);
+        res.json(units)
       })
       .fail(function(error) {
         next(error);
@@ -16,8 +16,3 @@ module.exports = {
   }
 
 }
-
-
-// req/req
-
-// export a function called get all

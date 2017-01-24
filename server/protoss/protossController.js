@@ -1,7 +1,7 @@
 var Q = require('q');
-var Terran = require('./terranSchema.js');
+var Protoss = require('./protossSchema.js');
 
-var findAllUnits = Q.nbind(Terran.find, Terran)
+var findAllUnits = Q.nbind(Protoss.find, Protoss);
 
 module.exports = {
 
@@ -16,8 +16,3 @@ module.exports = {
   }
 
 }
-
-
-// req/req
-
-// export a function called get all
