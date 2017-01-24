@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var terranSchema = new mongoose.Schema({
+var terranSchema = mongoose.Schema({
   name: String
 });
 

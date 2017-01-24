@@ -3,6 +3,7 @@ angular.module('starCraftWoo', [
   'starCraftWoo.terran',
   'starCraftWoo.protoss',
   'starCraftWoo.zerg',
+  'starCraftWoo.services',
   'ngRoute'
   ])
 
