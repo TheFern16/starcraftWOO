@@ -1,6 +1,8 @@
 angular.module('starCraftWoo', [
   'starCraftWoo.races',
   'starCraftWoo.terran',
+  'starCraftWoo.protoss',
+  'starCraftWoo.zerg',
   'ngRoute'
   ])
 
@@ -9,19 +11,23 @@ angular.module('starCraftWoo', [
     $routeProvider
 
     .when('/', {
-      templateUrl: 'client/races/races.html',
+      templateUrl: './races/races.html',
       controller: 'RacesController'
     })
 
     .when('/terran', {
-      templateUrl: 'client/terran/terran.html',
+      templateUrl: './terran/terran.html',
       controller: 'TerranController'
     })
 
-    .otherwise({
-      redirectTo: '/'
-    });
+    .when('/zerg', {
+      templateUrl: './zerg/zerg.html',
+      controller: 'ZergController'
+    })
 
-    $locationProvider.html5Mode(true);
+    .when('/protoss', {
+      templateUrl: './protoss/protoss.html',
+      controller: 'ProtossController'
+    })
 
-  })
+  });

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="starCraftWoo">
 <head >
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
   <!-- Added Angular js files -->
   <meta charset="UTF-8">
 
@@ -10,13 +8,22 @@
 
 </head>
   <body>
-  <h1>StarCraft WOO</h1>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+  <div id='home' ng-controller="RacesController">
+  <span ng-click="changeView('terran')"><strong>Terran</strong></span>
+  <span ng-click="changeView('protoss')"><strong>Protoss</strong></span>
+  <span ng-click="changeView('zerg')"><strong>Zerg</strong></span>
+  </div>
+
     <div ng-view></div>
 
 
   <!-- Angular Controllers & Services -->
-  <script src="./races/races.js"></script>
-  <script src="./terran/terran.js"></script>
-  <script src="app.js"></script>
+  <script src="races/races.js"></script>
+  <script src="terran/terran.js"></script>
+  <script src="protoss/protoss.js"></script>
+  <script src="zerg/zerg.js"></script>
+  <script src="/app.js"></script>
   </body>
 </html>
