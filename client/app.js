@@ -30,4 +30,5 @@ angular.module('starCraftWoo', [
       controller: 'ProtossController'
     })
 
+
   });
