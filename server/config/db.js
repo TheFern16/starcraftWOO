@@ -1,5 +1,5 @@
 module.exports = {
 
-  // url: 'mongodb://172.31.0.0/16'
+  url: 'mongodb:<dbuser>:<dbpassword>@ds041633.mlab.com:41633/starcraftwoo'
 
 }
