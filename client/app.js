@@ -5,14 +5,15 @@ angular.module('starCraftWoo', ['ngRoute', 'MainCtrl', 'TerranCtrl', 'TerranServ
     $routeProvider
 
     .when('/', {
-      templateUrl: 'public/index.html',
-      controller: 'MainController'
+      templateUrl: 'races/races.html',
+      controller: 'RacesController'
     })
 
     .when('/terran', {
-      templateUrl: 'public/models/terran/terran.html',
+      templateUrl: 'terran/terran.html',
       controller: 'TerranController'
     })
+
     .otherwise({
       redirectTo: '/'
     });

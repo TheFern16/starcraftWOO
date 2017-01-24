@@ -13,7 +13,7 @@ var Terran = require('../public/models/terran/terran.js');
     });
 
     app.get('*', function(req, res) {
-      res.sendfile('../public/views/home.html');
+      res.sendFile('../client/races/races.html');
     });
 
   }

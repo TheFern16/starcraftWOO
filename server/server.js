@@ -25,7 +25,7 @@ app.use(express.static('./public'));
 
 // ROUTE ME BRO
 
-require('./app/routes')
+require('routes')
 
 // Listen to me
 
