@@ -1,8 +1,10 @@
-angular.module('TerranService', []).factory('Terran', ['$http', function($http) {
+angular.module('TerranService', [])
+
+  .factory('Terran', '$http', function($http) {
 
   return {
     get: function() {
-      return: $http.get('/api/terran');
+      return $http.get('/api/terran');
     },
 
     create: function(terranData) {
@@ -14,4 +16,4 @@ angular.module('TerranService', []).factory('Terran', ['$http', function($http) 
     }
   }
 
-}]);
+});

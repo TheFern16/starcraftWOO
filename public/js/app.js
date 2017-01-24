@@ -10,13 +10,13 @@ angular.module('starCraftWoo', ['ngRoute', 'MainCtrl', 'TerranCtrl', 'TerranServ
     })
 
     .when('/terran', {
-      templateUrl: 'app/models/terran/terran.html',
+      templateUrl: 'public/models/terran/terran.html',
       controller: 'TerranController'
-    });
+    })
     .otherwise({
       redirectTo: '/'
     });
 
     $locationProvider.html5Mode(true);
 
-  }])
+  })
