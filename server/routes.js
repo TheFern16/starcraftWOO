@@ -1,5 +1,5 @@
 var terran = require('../client/terran/terran.js');
-var races = requre('../client/races/races.js')
+var races = require('../client/races/races.js')
 
   module.exports = function(app) {
 

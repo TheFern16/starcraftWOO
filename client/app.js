@@ -1,7 +1,7 @@
-angular.module('starCraftWoo',
-  ['ngRoute',
+angular.module('starCraftWoo', [
   'starCraftWoo.races',
-  'starCraftWoo.terran'
+  'starCraftWoo.terran',
+  'ngRoute'
   ])
 
 .config(function($routeProvider, $locationProvider) {
@@ -9,12 +9,12 @@ angular.module('starCraftWoo',
     $routeProvider
 
     .when('/', {
-      templateUrl: 'races/races.html',
+      templateUrl: '/client/races/races.html',
       controller: 'RacesController'
     })
 
     .when('/terran', {
-      templateUrl: 'terran/terran.html',
+      templateUrl: '/client/terran/terran.html',
       controller: 'TerranController'
     })
 

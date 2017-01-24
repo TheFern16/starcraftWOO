@@ -1,0 +1,18 @@
+{
+  "name": "hrr21-mvp-master",
+  "description": "",
+  "main": "server.js",
+  "license": "ISC",
+  "homepage": "https://github.com/poplockndropit/starcraftWOO",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1"
+  }
+}
