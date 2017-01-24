@@ -9,12 +9,12 @@ angular.module('starCraftWoo', [
     $routeProvider
 
     .when('/', {
-      templateUrl: '/client/races/races.html',
+      templateUrl: 'client/races/races.html',
       controller: 'RacesController'
     })
 
     .when('/terran', {
-      templateUrl: '/client/terran/terran.html',
+      templateUrl: 'client/terran/terran.html',
       controller: 'TerranController'
     })
 
