@@ -1,0 +1,1 @@
+angular.module('starCraftWoo', ['ngRoute', 'appRoutes', 'MainController', 'TerranController', 'TerranService'])
