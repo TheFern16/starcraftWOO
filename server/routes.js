@@ -1,9 +1,10 @@
-var Terran = require('../public/models/terran/terran.js');
+var terran = require('../client/terran/terran.js');
+var races = requre('../client/races/races.js')
 
   module.exports = function(app) {
 
     app.get('/api/terran', function(req, res) {
-      Terran.find(function(err, ter) {
+      terran.find(function(err, ter) {
         if (err) {
           res.send(err);
         } else {

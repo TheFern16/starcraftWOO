@@ -1,4 +1,8 @@
-angular.module('starCraftWoo', ['ngRoute', 'MainCtrl', 'TerranCtrl', 'TerranService'])
+angular.module('starCraftWoo',
+  ['ngRoute',
+  'starCraftWoo.races',
+  'starCraftWoo.terran'
+  ])
 
 .config(function($routeProvider, $locationProvider) {
 

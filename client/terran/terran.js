@@ -1,4 +1,6 @@
-angular.module('starcraftwoo.terran', []).controller('TerranController', function($scope) {
+angular.module('starCraftWoo.terran', [])
+
+.controller('TerranController', function($scope) {
 
   $scope.tagline = 'Stim pack is good.';
 

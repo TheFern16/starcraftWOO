@@ -1,4 +1,4 @@
-angular.module('starcraftwoo.race', [])
+angular.module('starCraftWoo.race', [])
 
 .controller('RacesController', function($scope) {
 

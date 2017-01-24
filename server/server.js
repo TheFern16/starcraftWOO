@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 
 // Shipping out of this port
 
-var db = require('./config/db');
+var db = require('./config/db.js');
 var port = process.env.PORT || 8080;
 
 // Mongoose time
@@ -25,7 +25,7 @@ app.use(express.static('./public'));
 
 // ROUTE ME BRO
 
-require('routes')
+require('./routes.js')
 
 // Listen to me
 
