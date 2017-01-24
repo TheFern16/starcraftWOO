@@ -16,8 +16,3 @@ module.exports = {
   }
 
 }
-
-
-// req/req
-
-// export a function called get all

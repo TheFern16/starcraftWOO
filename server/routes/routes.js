@@ -1,6 +1,6 @@
 var terranController = require('../terran/terranController.js');
 var protossController = require('../protoss/protossController.js');
-var zergController = require('../zerg/zergController.js')
+var zergController = require('../zerg/zergController.js');
 
 module.exports = function (app, express) {
 
