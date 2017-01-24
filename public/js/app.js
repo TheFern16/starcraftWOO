@@ -1,7 +1,6 @@
-angular.module('starCraftWoo', ['ngRoute', 'appRoutes', 'MainCtrl', 'TerranCtrl', 'TerranService'])
+angular.module('starCraftWoo', ['ngRoute', 'MainCtrl', 'TerranCtrl', 'TerranService'])
 
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider',
-  function($routeProvider, $locationProvider) {
+.config(function($routeProvider, $locationProvider) {
 
     $routeProvider
 
