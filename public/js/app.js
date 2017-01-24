@@ -1,1 +1,1 @@
-angular.module('starCraftWoo', ['ngRoute', 'appRoutes', 'MainController', 'TerranController', 'TerranService'])
+angular.module('starCraftWoo', ['ngRoute', 'appRoutes', 'MainCtrl', 'TerranCtrl', 'TerranService'])
