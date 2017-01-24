@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 
-module.exports = mongoose.model('Terran', {
-  name: { type: String, default: '' }
+var terranSchema = new mongoose.Schema({
+  name: String
 });
+
+module.exports = mongoose.model('Terran', terranSchema);

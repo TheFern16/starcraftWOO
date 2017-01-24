@@ -1,4 +1,4 @@
-var Terran = require('./models/terran');
+var Terran = require('./models/terran/terran.js');
 
   module.exports = function(app) {
 

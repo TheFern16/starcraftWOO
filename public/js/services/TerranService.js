@@ -10,7 +10,7 @@ angular.module('TerranService', []).factory('Terran', ['$http', function($http) 
     },
 
     delete: function(id) {
-      return $http.delete('/api/nerds/' + id);
+      return $http.delete('/api/terran/' + id);
     }
   }
 
