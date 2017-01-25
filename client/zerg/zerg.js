@@ -13,6 +13,6 @@ angular.module('starCraftWoo.zerg', [])
       console.error(error);
     });
   };
-  initializeLinks();
+  // initializeLinks();
 
 })

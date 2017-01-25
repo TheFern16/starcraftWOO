@@ -12,5 +12,5 @@ angular.module('starCraftWoo.terran', [])
       console.error(error);
     });
   };
-  initializeLinks();
+  // initializeLinks();
 })

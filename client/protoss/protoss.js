@@ -13,6 +13,6 @@ angular.module('starCraftWoo.protoss', [])
       console.error(error);
     });
   };
-  initializeLinks();
+  // initializeLinks();
 
 })

@@ -30,4 +30,5 @@ angular.module('starCraftWoo.services', [])
     getAllZerg: getAllZerg,
     getAllProtoss: getAllProtoss
   };
+
 });

@@ -14,7 +14,9 @@ process.setMaxListeners(0);
 var db = require('./config/db.js');
 var port = process.env.PORT || 8000;
 
-mongoose.connect(db.url);
+// mongoose.connect('mongodb:dbuser:dbpassword@ds041633.mlab.com:41633/starcraftwoo');
+
+// app.on(Load seeder file)
 
 app.use(morgan());
 
