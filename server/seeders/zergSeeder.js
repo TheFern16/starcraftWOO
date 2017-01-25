@@ -1,5 +1,9 @@
 var Zerg = require('../zerg/zergSchema');
 
+var mongoose = require('mongoose');
+
+mongoose.connect('localhost:8000');
+
 var zergUnits = [
   new Zerg = ({
     name: "Larva"
@@ -60,3 +64,9 @@ var zergUnits = [
   }),
 
 ]
+
+for (var i = 0; i < zergUnits.length; i++) {
+  zergUnits[i].save();
+}
+
+mongoose.disconnect();

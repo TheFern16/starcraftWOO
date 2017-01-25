@@ -1,5 +1,9 @@
 var Terran = require('../terran/terranSchema');
 
+var mongoose = require('mongoose');
+
+mongoose.connect('localhost:8000');
+
 var terranUnits = [
   new Terran({
     name: 'SCV'
@@ -53,4 +57,10 @@ var terranUnits = [
     name: 'Cyclone'
   }),
 
-  ]
+]
+
+for (var i = 0; i < terranUnits.length; i++) {
+  terranUnits[i].save();
+}
+
+mongoose.disconnect();

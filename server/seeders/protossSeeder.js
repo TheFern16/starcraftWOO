@@ -1,5 +1,9 @@
 var Protoss = require('../protoss/protossSchema');
 
+var mongoose = require('mongoose');
+
+mongoose.connect('localhost:8000');
+
 var protossUnits = [
   new Protoss({
     name: "Probe"
@@ -63,3 +67,9 @@ var protossUnits = [
   }),
 
 ]
+
+for (var i = 0; i < protossUnits.length; i++) {
+  protossUnits[i].save();
+}
+
+mongoose.disconnect();
