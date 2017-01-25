@@ -14,7 +14,7 @@ process.setMaxListeners(0);
 var db = require('./config/db.js');
 var port = process.env.PORT || 8000;
 
-// mongoose.connect('mongodb:dbuser:dbpassword@ds041633.mlab.com:41633/starcraftwoo');
+// mongoose.connect('mongodb://localhost/starCraftWoo');
 
 // app.on(Load seeder file)
 

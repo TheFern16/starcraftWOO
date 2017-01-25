@@ -68,8 +68,17 @@ var protossUnits = [
 
 ]
 
+var done = 0;
+
 for (var i = 0; i < protossUnits.length; i++) {
-  protossUnits[i].save();
+  protossUnits[i].save(function(err, result) {
+    done++;
+    if (done === protossUnits.length) {
+      exit()
+    }
+  });
 }
 
-mongoose.disconnect();
+function exit() {
+  mongoose.disconnect();
+}

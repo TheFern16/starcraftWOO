@@ -65,8 +65,19 @@ var zergUnits = [
 
 ]
 
+var done = 0;
+
 for (var i = 0; i < zergUnits.length; i++) {
-  zergUnits[i].save();
+  zergUnits[i].save(function(err, result) {
+    done++;
+    if (done === zergUnits.length) {
+      exit();
+    }
+  });
+}
+
+function exit() {
+  mongoose.disconnect();
 }
 
 mongoose.disconnect();

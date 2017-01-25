@@ -59,8 +59,17 @@ var terranUnits = [
 
 ]
 
+var done = 0;
+
 for (var i = 0; i < terranUnits.length; i++) {
-  terranUnits[i].save();
+  terranUnits[i].save(function(err, result) {
+    done++;
+    if (done === terranUnits.length) {
+      exit();
+    }
+  });
 }
 
-mongoose.disconnect();
+function exit() {
+  mongoose.disconnect();
+}
